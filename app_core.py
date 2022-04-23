@@ -37,7 +37,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def show_past_games(messevent):
     if messevent.message.text == "過去比賽資訊":
-        all_past_games = update_game_info.update_past_games()
+        all_past_games,flag = update_game_info.update_past_games()
         all_past_games_carousel = FlexSendMessage(
                         alt_text='過去比賽資訊',
                         contents={
@@ -49,8 +49,10 @@ def show_past_games(messevent):
             messevent.reply_token,
             all_past_games_carousel
             )
+        if flag :
+            line_bot_api.push_message('U4db741bd4819f0b5667efcd19a4475d4', TextSendMessage(text='有些精華還沒上傳完成,所以賽事精華連結會是官方yt喔!'))
     elif messevent.message.text == "近期比賽資訊":
-        all_future_games = update_game_info.update_future_games()
+        all_future_games,flag = update_game_info.update_future_games()
         all_future_games_carousel = FlexSendMessage(
                         alt_text='近期比賽資訊',
                         contents={
@@ -62,6 +64,8 @@ def show_past_games(messevent):
             messevent.reply_token,
             all_future_games_carousel
             )
+        if flag :
+            line_bot_api.push_message('U4db741bd4819f0b5667efcd19a4475d4', TextSendMessage(text='有些賽程尚未有直播連結,所以直播網址會是官方yt喔!'))
     elif messevent.message.text == "各隊資訊":
         all_team_info = update_game_info.update_teams()
         all_team_carousel = FlexSendMessage(

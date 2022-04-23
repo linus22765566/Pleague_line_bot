@@ -8,7 +8,10 @@ def highlight_yt(game_number):
     response = requests.get("https://pleagueofficial.com/video")
     allinfo = BeautifulSoup(response.text, "html.parser")
     past_games = allinfo.find(id = "video-"+str(game_number))
-    return (past_games['href'])
+    if(past_games == None):
+        return 'https://www.youtube.com/channel/UCBGpG-uiIlxb348HZrEprEA',True
+    else:
+        return (past_games['href'],False)
 
 def livestream_yt(game_number):
     # to find hightlight on Youtube
@@ -16,7 +19,10 @@ def livestream_yt(game_number):
     response = requests.get("https://pleagueofficial.com/game/"+str(game_number))
     allinfo = BeautifulSoup(response.text, "html.parser")
     past_games = allinfo.find("a",class_="colorBB986C btn btn-primary btn-pill fs14 btn-sm mb-1 mr-2 pr-4 pl-4")
-    return (past_games['href'])
+    if(past_games == None):
+        return 'https://www.youtube.com/channel/UCBGpG-uiIlxb348HZrEprEA',True
+    else:
+        return (past_games['href'],False)
 
 def update_teams():
     # do crawler first
@@ -96,10 +102,10 @@ def update_past_games():
         # 數據網址
         each_team["footer"]["contents"][1]["action"]["uri"] = 'https://pleagueofficial.com/game/'+str(int(game_number)+72)
         # 賽事精華
-        each_team["footer"]["contents"][0]["action"]["uri"] = highlight_yt(int(game_number))
+        each_team["footer"]["contents"][0]["action"]["uri"],flag = highlight_yt(int(game_number))
     
         past_gmaes_info.append(each_team)
-    return past_gmaes_info
+    return past_gmaes_info,flag
 
 def update_future_games():
     response = requests.get("https://pleagueofficial.com/schedule-regular-season")
@@ -129,10 +135,10 @@ def update_future_games():
         # 購票網址
         each_team["footer"]["contents"][1]["action"]["uri"] = 'https://pleagueofficial.com'+a_game.find_all("a",class_="fs12 mt-md-2 my-0 py-0 d-md-block d-inline mr-2")[1]['href']
         # 直播網址
-        each_team["footer"]["contents"][0]["action"]["uri"] = livestream_yt(int(game_number))
+        each_team["footer"]["contents"][0]["action"]["uri"],flag = livestream_yt(int(game_number))
     
         future_gmaes_info.append(each_team)
-    return future_gmaes_info
+    return future_gmaes_info,flag
 
 def main():
     print('hello! I\'m main')
