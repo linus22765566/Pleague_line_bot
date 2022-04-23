@@ -9,4 +9,16 @@ below is bot's QR code
 
 
 ## how it work
-### in 
+### in json folder:
+Here's template of all flex message used by bot.
+Because different template is used in different function, and they are too long to be init in app_core.py.
+So I just seperate them in a folder, to read them when needed.
+
+### in app_core.py:
+Here's the main part of the bot. Dealing with the request from line user, init the bot with token here, and reply message is also write in method here.
+
+### in update_game_info.py:
+Here's all of the function implement, including getting videos url of different games, getting scoreboard of games, and also teams information here.
+
+### in img folder:
+Just image used in bot richmenu. Not related to coding.
