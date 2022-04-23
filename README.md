@@ -1,6 +1,6 @@
 # Pleague_line_bot
 This is a linebot using line-bot-sdk & beautifulsoup to get latest information of P+ league.
-Cause I'm P+ fans, so all the function is designed by my daily need.
+Cause I'm P+ fans, so all the function is designed for my daily need.
 Also, if you want, just get clone my project, then request a PR, contributor is welcome!! :)
 
 below is bot's QR code
