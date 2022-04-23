@@ -1,0 +1,187 @@
+{
+    "teams":[
+        {
+            "Team_name":"臺北富邦勇士",
+            "image":"https://upload.wikimedia.org/wikipedia/zh/7/77/%E8%87%BA%E5%8C%97%E5%AF%8C%E9%82%A6%E5%8B%87%E5%A3%AB.png",
+            "rank":0,
+            "win_or_lose":"",
+            "official_website":"https://liff.line.me/1657078410-grVwxWWv",
+            "Youtube_channel":"https://liff.line.me/1657078410-OeYPQvv2",
+            "ticket_buying":"",
+            "home":"台北和平籃球館"
+        },
+        {
+            "Team_name":"新竹街口攻城獅",
+            "image":"https://upload.wikimedia.org/wikipedia/zh/0/00/%E6%96%B0%E7%AB%B9%E8%A1%97%E5%8F%A3%E6%94%BB%E5%9F%8E%E7%8D%85.png",
+            "rank":0,
+            "win_or_lose":"",
+            "official_website":"https://liff.line.me/1657078410-OzKbGNNj",
+            "Youtube_channel":"https://liff.line.me/1657078410-lW69PrrW",
+            "ticket_buying":"",
+            "home":"新竹縣體育館"
+        },
+        {
+            "Team_name":"福爾摩沙台新夢想家",
+            "image":"https://upload.wikimedia.org/wikipedia/zh/9/9e/%E7%A6%8F%E7%88%BE%E6%91%A9%E6%B2%99%E5%8F%B0%E6%96%B0%E5%A4%A2%E6%83%B3%E5%AE%B6.png",
+            "rank":0,
+            "win_or_lose":"",
+            "official_website":"https://liff.line.me/1657078410-mNeNMppq",
+            "Youtube_channel":"https://liff.line.me/1657078410-eZyB6llP",
+            "ticket_buying":"",
+            "home":"台中洲際迷你蛋"
+        },
+        {
+            "Team_name":"新北國王",
+            "image":"https://upload.wikimedia.org/wikipedia/zh/f/ff/%E6%96%B0%E5%8C%97%E5%9C%8B%E7%8E%8B.png",
+            "rank":0,
+            "win_or_lose":"",
+            "official_website":"https://liff.line.me/1657078410-b4l6Bqqo",
+            "Youtube_channel":"https://liff.line.me/1657078410-Nm6gOAAP",
+            "ticket_buying":"",
+            "home":"新莊體育館"
+        },
+        {
+            "Team_name":"桃園領航猿",
+            "image":"https://pyct-basketball.com.tw/wp-content/uploads/2021/11/%E8%B3%87%E7%94%A2-3-930x1030.png",
+            "rank":0,
+            "win_or_lose":"",
+            "official_website":"https://liff.line.me/1657078410-8qLg377d",
+            "Youtube_channel":"https://liff.line.me/1657078410-gyKqNWWM",
+            "ticket_buying":"",
+            "home":"桃園市綜合體育館"
+        },
+        {
+            "Team_name":"高雄鋼鐵人",
+            "image":"https://upload.wikimedia.org/wikipedia/zh/1/1f/%E9%AB%98%E9%9B%84%E9%8B%BC%E9%90%B5%E4%BA%BA.png",
+            "rank":0,
+            "win_or_lose":"",
+            "official_website":"https://liff.line.me/1657078410-VEea6GGb",
+            "Youtube_channel":"https://liff.line.me/1657078410-Zd157AAN",
+            "ticket_buying":"",
+            "home":"高雄鳳山體育館"
+        }
+    ],
+    "others":
+    {
+        "win_start":{
+            "type": "icon",
+            "size": "sm",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+        },
+        "lose_start" :{
+            "type": "icon",
+            "size": "sm",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+        },
+        "ranking":{
+            "type": "text",
+            "text": "聯盟第",
+            "size": "sm",
+            "color": "#999999",
+            "margin": "none",
+            "flex": 0
+        },
+        "number1":{
+            "type": "text",
+            "text": "1",
+            "size": "sm",
+            "color": "#999999",
+            "margin": "md",
+            "flex": 0,
+            "style": "italic",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetEnd": "sm"
+        },
+        "number2":{
+            "type": "text",
+            "text": "2",
+            "size": "sm",
+            "color": "#999999",
+            "margin": "md",
+            "flex": 0,
+            "style": "italic",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetEnd": "sm"
+        },
+        "number3":{
+            "type": "text",
+            "text": "3",
+            "size": "sm",
+            "color": "#999999",
+            "margin": "md",
+            "flex": 0,
+            "style": "italic",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetEnd": "sm"
+        },
+        "number4":{
+            "type": "text",
+            "text": "4",
+            "size": "sm",
+            "color": "#999999",
+            "margin": "md",
+            "flex": 0,
+            "style": "italic",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetEnd": "sm"
+        },
+        "number5":{
+            "type": "text",
+            "text": "5",
+            "size": "sm",
+            "color": "#999999",
+            "margin": "md",
+            "flex": 0,
+            "style": "italic",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetEnd": "sm"
+        },
+        "number6":{
+            "type": "text",
+            "text": "6",
+            "size": "sm",
+            "color": "#999999",
+            "margin": "md",
+            "flex": 0,
+            "style": "italic",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetEnd": "sm"
+        },
+        "losing":{
+            "type": "text",
+            "text": "連敗",
+            "size": "sm",
+            "color": "#999999",
+            "margin": "md",
+            "flex": 0,
+            "offsetBottom": "none",
+            "offsetEnd": "none"
+        },
+        "winning":{
+            "type": "text",
+            "text": "連勝",
+            "size": "sm",
+            "color": "#999999",
+            "margin": "md",
+            "flex": 0,
+            "offsetBottom": "none",
+            "offsetEnd": "none"
+        },
+        "games":{
+            "type": "text",
+            "text": "場",
+            "size": "sm",
+            "color": "#999999",
+            "margin": "md",
+            "flex": 0,
+            "offsetBottom": "none",
+            "offsetEnd": "md"
+        }
+    }
+}

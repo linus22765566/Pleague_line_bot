@@ -1,0 +1,158 @@
+{
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "horizontal",
+      "contents": [
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/zh/7/77/%E8%87%BA%E5%8C%97%E5%AF%8C%E9%82%A6%E5%8B%87%E5%A3%AB.png"
+        },
+        {
+          "type": "text",
+          "text": "VS",
+          "gravity": "center",
+          "align": "center",
+          "size": "xxl",
+          "weight": "bold"
+        },
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/zh/7/77/%E8%87%BA%E5%8C%97%E5%AF%8C%E9%82%A6%E5%8B%87%E5%A3%AB.png"
+        }
+      ]
+    },
+    "hero": {
+      "type": "box",
+      "layout": "horizontal",
+      "contents": [
+        {
+          "type": "text",
+          "text": "89",
+          "gravity": "center",
+          "size": "3xl",
+          "weight": "bold",
+          "margin": "none",
+          "offsetBottom": "none",
+          "offsetStart": "xxl",
+          "align": "center"
+        },
+        {
+          "type": "text",
+          "text": ":",
+          "gravity": "center",
+          "size": "xl",
+          "weight": "bold",
+          "align": "center",
+          "margin": "none"
+        },
+        {
+          "type": "text",
+          "text": "101",
+          "size": "3xl",
+          "weight": "bold",
+          "offsetEnd": "xxl",
+          "gravity": "center",
+          "align": "center"
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "G77",
+              "gravity": "center",
+              "align": "center",
+              "size": "xl",
+              "margin": "md",
+              "offsetStart": "xxl",
+              "weight": "bold"
+            },
+            {
+              "type": "text",
+              "text": "廣場",
+              "align": "center",
+              "size": "xxs",
+              "margin": "md",
+              "offsetEnd": "xxl",
+              "weight": "bold",
+              "offsetBottom": "none",
+              "offsetTop": "lg"
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "進場人數：",
+              "gravity": "center",
+              "align": "center",
+              "size": "sm",
+              "margin": "none",
+              "offsetStart": "xxl"
+            },
+            {
+              "type": "text",
+              "text": "1000/1200",
+              "gravity": "center",
+              "align": "center",
+              "size": "sm",
+              "margin": "md",
+              "offsetEnd": "xxl"
+            }
+          ],
+          "offsetTop": "md"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "01/01 (一) 17:00",
+              "align": "center",
+              "size": "sm",
+              "margin": "md"
+            }
+          ],
+          "offsetTop": "lg"
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "horizontal",
+      "spacing": "none",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "uri",
+            "label": "賽事精華",
+            "uri": "https://www.youtube.com/c/LINEDevelopersTaiwan/videos"
+          },
+          "style": "link"
+        },
+        {
+          "type": "button",
+          "style": "link",
+          "action": {
+            "type": "uri",
+            "label": "本場數據",
+            "uri": "https://www.facebook.com/LINEDevelopersTW"
+          }
+        }
+      ],
+      "flex": 0
+    }
+  }
