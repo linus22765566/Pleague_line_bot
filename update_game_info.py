@@ -4,14 +4,14 @@ import json
 
 def highlight_yt(game_number):    
     # to find hightlight on Youtube
-    game_number += 125
     response = requests.get("https://pleagueofficial.com/video")
     allinfo = BeautifulSoup(response.text, "html.parser")
-    past_games = allinfo.find(id = "video-"+str(game_number))
-    if(past_games == None):
-        return 'https://www.youtube.com/channel/UCBGpG-uiIlxb348HZrEprEA',True
-    else:
-        return (past_games['href'],False)
+    past_games = allinfo.find_all("div",class_="col-lg-4 col-md-4 col-6 mb-md-5 mb-3 px-md-2 px-2")
+    #print(past_games)
+    for i in past_games:
+        if str(game_number) in i.find("a")["data-sub-html"]:
+            return (i.find("a")["href"]),False
+    return 'https://www.youtube.com/channel/UCBGpG-uiIlxb348HZrEprEA',True
 
 def livestream_yt(game_number):
     # to find hightlight on Youtube
